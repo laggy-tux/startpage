@@ -2,6 +2,8 @@
 
 A simple (and editable) dark startpage/newpage:
 - Colour Scheme(s): Catpuccin, Colours derived from cover image
+- has multipage capability
+
 
 > **NOTE**: keep in mind that I don't own any rights to the images included in this repository.
 
