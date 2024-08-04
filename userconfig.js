@@ -72,7 +72,7 @@ const default_config = {
             name: "docs",
             url: "https://docs.google.com/",
             icon: "paperclip",
-            icon_color: "#6c7086",
+            icon_color: "#cba6f7",
           },
         ],
       
