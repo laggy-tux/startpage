@@ -38,21 +38,21 @@ const default_config = {
             name: "youtube",
             url: "https://www.youtube.com/",
             icon: "brand-youtube",
-            icon_color: "#5b5b5b",
+            icon_color: "#cba6f7",
           },
           
           {
             name: "reddit",
             url: "https://www.reddit.com/",
             icon: "brand-reddit",
-            icon_color: "#5b5b5b",
+            icon_color: "#cba6f7",
           },
           
           {
             name: "whatsapp",
             url: "https://web.whatsapp.com/",
             icon: "brand-whatsapp",
-            icon_color: "#5b5b5b",
+            icon_color: "#cba6f7",
           },
         ],
       },{
@@ -62,7 +62,7 @@ const default_config = {
             name: "github",
             url: "https://github.com/",
             icon: "brand-github",
-            icon_color: "#5b5b5b",
+            icon_color: "#cba6f7",
           },
         ],
       },{
