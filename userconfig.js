@@ -29,7 +29,7 @@ const default_config = {
   openLastVisitedTab: false,
   tabs: [
     {
-      name: "hello",
+      name: "stuff",
       background_url: "src/img/banners/cbg-8.gif",
       categories: [{
         name: "Social",
@@ -55,6 +55,7 @@ const default_config = {
             icon_color: "#5b5b5b",
           },
         ],
+      },{
         name: "Dev",
         links: [
           {
@@ -64,6 +65,7 @@ const default_config = {
             icon_color: "#5b5b5b",
           },
         ],
+      },{
         name: "School",
         links: [
           {
@@ -73,6 +75,7 @@ const default_config = {
             icon_color: "#5b5b5b",
           },
         ],
+      
 
       },  ],
     },
