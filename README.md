@@ -17,4 +17,5 @@ A simple (and editable) dark startpage/newpage:
 
 ### Credits:>
 > this project is forked from [Axenide](https://github.com/Axenide).
+
 > **NOTE**: keep in mind that I don't own any rights to the images included in this repository.
