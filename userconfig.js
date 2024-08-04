@@ -29,7 +29,7 @@ const default_config = {
   openLastVisitedTab: false,
   tabs: [
     {
-      name: "stuff",
+      name: "hello",
       background_url: "src/img/banners/cbg-8.gif",
       categories: [{
         name: "Social",
