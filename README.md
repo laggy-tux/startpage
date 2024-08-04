@@ -15,7 +15,7 @@ A simple (and editable) dark startpage/newpage:
 
 ![img](preview.gif)
 
-### Credits:>
+### Credits:
 > this project is forked from [Axenide](https://github.com/Axenide).
 
 > **NOTE**: keep in mind that I don't own any rights to the images included in this repository.
