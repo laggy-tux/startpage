@@ -180,7 +180,7 @@ class Tabs extends Component {
       }
 
       .categories ul .links a {
-          color: #cdd6f4;
+          color: #a6adc8;
           text-decoration: none;
           font: 700 18px 'Roboto', sans-serif;
           transition: all .2s;
@@ -222,7 +222,7 @@ class Tabs extends Component {
           bottom: 0;
           top: 0;
           background: linear-gradient(to top, transparent, rgba(0, 0, 0, .75));
-          color: #e0cda5;
+          color: #a6adc8;
           letter-spacing: 1px;
           font: 500 30px 'Nunito', sans-serif;
           text-align: center;
@@ -239,7 +239,7 @@ class Tabs extends Component {
       }
 
       .categories .links li h1 {
-          color: #cdd6f4;
+          color: #a6adc8;
 	        opacity: 0.5;
           font-size: 13px;
           margin-bottom: 1em;
@@ -251,7 +251,7 @@ class Tabs extends Component {
 
       .categories .link-icon {
           font-size: 27px;
-          color: #726f6f;
+          color: #a6adc8;
       }
 
       .categories .link-icon + .link-name {
