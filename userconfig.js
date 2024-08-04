@@ -29,7 +29,7 @@ const default_config = {
   openLastVisitedTab: false,
   tabs: [
     {
-      name: "hello",
+      name: "stuff",
       background_url: "src/img/banners/cbg-8.gif",
       categories: [{
         name: "Social",
@@ -72,7 +72,7 @@ const default_config = {
             name: "docs",
             url: "https://docs.google.com/",
             icon: "paperclip",
-            icon_color: "#5b5b5b",
+            icon_color: "#6c7086",
           },
         ],
       
