@@ -187,6 +187,7 @@ class Statusbar extends Component {
 
       .fastlink-icon {
 	      width: 50%;
+              color: #b4befe;
       }
     `;
   }
