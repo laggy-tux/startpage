@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: 'Mendoza, Argentina',
+    location: 'Bangalore, India',
     scale: "C",
   },
   clock: {
@@ -29,7 +29,7 @@ const default_config = {
   openLastVisitedTab: false,
   tabs: [
     {
-      name: "media",
+      name: "stuff",
       background_url: "src/img/banners/cbg-8.gif",
       categories: [{
         name: "Social",
@@ -38,34 +38,42 @@ const default_config = {
             name: "youtube",
             url: "https://www.youtube.com/",
             icon: "brand-youtube",
-            icon_color: "#db4740",
+            icon_color: "#5b5b5b",
           },
-          {
-            name: "x",
-            url: "https://x.com/",
-            icon: "brand-x",
-            icon_color: "#beac8e",
-          },
+          
           {
             name: "reddit",
             url: "https://www.reddit.com/",
             icon: "brand-reddit",
-            icon_color: "#f28533",
+            icon_color: "#5b5b5b",
           },
-          {
-            name: "threads",
-            url: "https://threads.net/",
-            icon: "brand-threads",
-            icon_color: "#beac8e",
-          },
+          
           {
             name: "whatsapp",
             url: "https://web.whatsapp.com/",
             icon: "brand-whatsapp",
-            icon_color: "#b1b946",
+            icon_color: "#5b5b5b",
           },
-
         ],
+        name: "Dev",
+        links: [
+          {
+            name: "github",
+            url: "https://github.com/",
+            icon: "brand-github",
+            icon_color: "#5b5b5b",
+          },
+        ],
+        name: "School",
+        links: [
+          {
+            name: "docs",
+            url: "https://docs.google.com/",
+            icon: "paperclip",
+            icon_color: "#5b5b5b",
+          },
+        ],
+
       },  ],
     },
     
