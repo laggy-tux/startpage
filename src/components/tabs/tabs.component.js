@@ -180,7 +180,7 @@ class Tabs extends Component {
       }
 
       .categories ul .links a {
-          color: #d4be98;
+          color: #f5e0dc;
           text-decoration: none;
           font: 700 18px 'Roboto', sans-serif;
           transition: all .2s;
@@ -239,7 +239,7 @@ class Tabs extends Component {
       }
 
       .categories .links li h1 {
-          color: #d4be98;
+          color: #f5e0dc;
 	        opacity: 0.5;
           font-size: 13px;
           margin-bottom: 1em;
