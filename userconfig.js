@@ -67,7 +67,7 @@ const default_config = {
           {
             name: "wifiman",
             url: "https://wifiman.com/",
-            icon: "wifi-1",
+            icon: "network",
             icon_color: "#b4befe",
           },
         ],
