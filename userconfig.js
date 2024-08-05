@@ -64,6 +64,12 @@ const default_config = {
             icon: "brand-github",
             icon_color: "#b4befe",
           },
+          {
+            name: "wifiman",
+            url: "https://wifiman.com/",
+            icon: "wifi-1",
+            icon_color: "#b4befe",
+          },
         ],
       },{
         name: "School",
