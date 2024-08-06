@@ -47,6 +47,12 @@ const default_config = {
             icon: "brand-reddit",
             icon_color: "#b4befe",
           },
+          {
+            name: "whatsapp",
+            url: "https://web.whatsapp.com/",
+            icon: "brand-whatsapp",
+            icon_color: "#b4befe",
+          },
         ],
       },{
         name: "Dev",
