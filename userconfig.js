@@ -73,6 +73,12 @@ const default_config = {
             icon: "paperclip",
             icon_color: "#b4befe",
           },
+          {
+            name: "PW",
+            url: "https://www.pw.live/study/batches/study",
+            icon: "book",
+            icon_color: "#b4befe",
+          },
         ],
       
 
