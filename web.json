@@ -1,36 +1,20 @@
 {
-  "greeting_text": "おかえり！",
-  "background": "#171928",
-  "foreground": "#c7b7c7",
+  "greeting_text": "改善",
+  "background": "#1a1a1a",
+  "foreground": "#323232",
   "search_engine": "https://www.google.co.id/search?q=",
   "favourites": [
     {
-      "key": ":fb",
-      "url": "http://facebook.com"
-    },
-    {
-      "key": ":tt",
-      "url": "http://twitter.com"
-    },
-    {
-      "key": ":ig",
-      "url": "http://instagram.com"
+      "key": ":we",
+      "url": "https://web.whatsapp.com/"
     },
     {
       "key": ":yt",
       "url": "http://youtu.be"
     },
     {
-      "key": ":gh",
+      "key": ":gi",
       "url": "http://github.com"
-    },
-    {
-      "key": ":ks",
-      "url": "http://kaskus.co.id"
-    },
-    {
-      "key": ":tp",
-      "url": "http://tokopedia.com"
     },
     {
       "key": ":em",
