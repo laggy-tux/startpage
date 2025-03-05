@@ -1,7 +1,7 @@
 {
   "greeting_text": "改善",
-  "background": "#1a1a1a",
-  "foreground": "#323232",
+  "background": "#000000",
+  "foreground": "#7f849c",
   "search_engine": "https://www.google.co.id/search?q=",
   "favourites": [
     {
