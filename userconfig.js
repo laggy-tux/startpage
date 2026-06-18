@@ -43,7 +43,7 @@ const default_config = {
 
           {
             name: "whatsapp",
-            url: "https://www.web.whatsapp.com/",
+            url: "https://web.whatsapp.com/",
             icon: "brand-whatsapp",
             icon_color: "#b4befe",
           },
