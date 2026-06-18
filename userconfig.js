@@ -25,7 +25,7 @@ const default_config = {
     "q": "config-tab",
   },
   disabled: [],
-  fastlink: "https://chat.openai.com/",
+  fastlink: "https://gemini.google.com/app/",
   openLastVisitedTab: false,
   tabs: [
     {
