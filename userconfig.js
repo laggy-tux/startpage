@@ -25,7 +25,7 @@ const default_config = {
     "q": "config-tab",
   },
   disabled: [],
-  fastlink: "https://gemini.google.com/app/",
+  fastlink: "https://gemini.google.com/",
   openLastVisitedTab: false,
   tabs: [
     {
