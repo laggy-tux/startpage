@@ -83,7 +83,7 @@ const default_config = {
         links: [
           {
             name: "Portal",
-            url: "https://sjuv4.linways.com/ams/student/login/",
+            url: "https://sjuv4.linways.com/",
             icon: "paperclip",
             icon_color: "#b4befe",
           },
