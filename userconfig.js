@@ -40,6 +40,20 @@ const default_config = {
             icon: "brand-youtube",
             icon_color: "#b4befe",
           },
+
+          {
+            name: "whatsapp",
+            url: "https://www.web.whatsapp.com/",
+            icon: "brand-whatsapp",
+            icon_color: "#b4befe",
+          },
+
+          {
+            name: "instagram",
+            url: "https://www.instagram.com/",
+            icon: "brand-instagram",
+            icon_color: "#b4befe",
+          },
           
           {
             name: "reddit",
@@ -65,20 +79,15 @@ const default_config = {
           },
         ],
       },{
-        name: "School",
+        name: "college",
         links: [
           {
-            name: "docs",
-            url: "https://docs.google.com/",
+            name: "Portal",
+            url: "https://sjuv4.linways.com/ams/student/login/",
             icon: "paperclip",
             icon_color: "#b4befe",
           },
-          {
-            name: "PW",
-            url: "https://www.pw.live/study/batches/study",
-            icon: "book",
-            icon_color: "#b4befe",
-          },
+          
         ],
       
 
