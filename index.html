@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Load user-editable website links configuration -->
+  <script src="shortcuts.config.js"></script>
+</head>
+<body>
+
+  <!-- Dark ambient vignette background overlay -->
+  <div class="bg-overlay"></div>
+
+  <!-- Dashboard Layout -->
+  <div class="dashboard-container">
+    
+    <!-- Top Row -->
+    <div class="top-row">
+      <!-- Top-Left Greeting -->
+      <div class="greeting-box">
+        <h1 class="greeting-title">Hello</h1>
+        <div class="greeting-name" id="greetingName">Joy Yahshua</div>
+      </div>
+
+      <!-- Top-Right Time Widget -->
+      <div class="clock-card">
+        <div class="clock-header">Time</div>
+        <div class="clock-display" id="digitalClock">11:45 PM</div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="bottom-row">
+      <!-- Bottom-Left To-Do / Google Tasks Button -->
+      <div class="todo-btn-tile" id="todoTileBtn" data-tooltip="Google Tasks">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+        </svg>
+      </div>
+
+      <!-- Decorative Sparkle Icon -->
+      <div class="sparkle-icon">✦</div>
+
+      <!-- Bottom-Right Shortcuts Dock -->
+      <div class="dock-bar" id="shortcutsDock">
+        <!-- Dynamically rendered from shortcuts.config.js + Settings & Fullscreen buttons -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Backdrop for modals & drawers -->
+  <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+  <!-- Google Tasks Drawer -->
+  <div class="tasks-drawer" id="tasksDrawer">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/>
+        </svg>
+        <span class="drawer-title">Google Tasks</span>
+      </div>
+      <button class="close-btn" onclick="window.app.closeAllOverlays()">✕</button>
+    </div>
+
+    <div class="tasks-body">
+      <!-- Sync Status Banner -->
+      <div class="tasks-sync-banner" id="tasksSyncBanner">
+        <span>💡 Sync with Google Tasks</span>
+        <button class="sync-link-btn" onclick="window.tasksManager.initiateGoogleLogin()">Connect</button>
+      </div>
+
+      <!-- Add Task Input -->
+      <div class="add-task-row">
+        <input type="text" id="taskInput" class="task-input" placeholder="Add a new task...">
+        <button id="addTaskBtn" class="add-task-btn">Add</button>
+      </div>
+
+      <!-- Task Items List -->
+      <ul class="task-items-list" id="taskList">
+        <!-- Rendered dynamically -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="settings-modal" id="settingsModal">
+    <div class="settings-header">
+      <h2>Dashboard Settings</h2>
+      <button class="close-btn" onclick="window.app.closeAllOverlays()">✕</button>
+    </div>
+
+    <div class="settings-content">
+      <!-- Wallpaper Switcher -->
+      <div>
+        <div class="settings-section-title">Wallpaper Switcher</div>
+        <div class="wallpaper-grid" id="wallpaperGrid">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <div style="margin-top: 14px; display: flex; flex-direction: column; gap: 10px;">
+          <div class="form-group">
+            <label class="form-label">Add Wallpaper via Link / URL</label>
+            <div style="display: flex; gap: 8px;">
+              <input type="text" id="customWallpaperUrlInput" class="form-input" style="flex: 1;" placeholder="https://example.com/wallpaper.jpg">
+              <button id="applyCustomUrlBtn" class="add-task-btn">Add Link</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personalization -->
+      <div>
+        <div class="settings-section-title">Personalization</div>
+        <div class="form-group">
+          <label class="form-label">Display Name</label>
+          <input type="text" id="userNameInput" class="form-input" placeholder="Joy Yahshua">
+        </div>
+      </div>
+
+      <!-- Google Tasks Configuration -->
+      <div>
+        <div class="settings-section-title">Google Tasks Credentials</div>
+        <div class="form-group">
+          <label class="form-label">Google OAuth 2.0 Client ID</label>
+          <input type="text" id="googleClientIdInput" class="form-input" placeholder="your-client-id.apps.googleusercontent.com">
+          <div style="font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-top: 4px;">
+            Paste your Google OAuth Client ID to fetch and sync live Google Tasks.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/tasks.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
